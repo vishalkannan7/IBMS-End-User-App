@@ -1,13 +1,20 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Home.css';
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  IonRouterLink,
+} from "@ionic/react";
+import ExploreContainer from "../components/ExploreContainer";
+import "./Home.css";
 
 const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Blankdada</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -17,6 +24,15 @@ const Home: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer />
+        <IonRouterLink routerLink="/signup" color="primary">
+          Sign Up
+        </IonRouterLink>
+        <IonRouterLink routerLink="/login" color="primary">
+          LogIn
+        </IonRouterLink>
+        <IonRouterLink routerLink="/connection" color="primary">
+          Connection
+        </IonRouterLink>
       </IonContent>
     </IonPage>
   );
